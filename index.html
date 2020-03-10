@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IMDB clone - Codenation - Desafio 01</title>
+
+
+
+	<style>
+	
+		* {
+			box-sizing: border-box;
+		}		
+		
+		body {
+			background-color: #ccc;
+			font-family: verdana;
+		}
+
+		.container {
+			margin: 0 auto;
+			position: relative;
+			max-width: 100%;
+			width: 960px;
+		}
+
+		.hero {
+			background-image: url(https://aceleradev-react.netlify.com/aula-01/public/img/capa-madmax2.jpg);
+			background-size: cover;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 90vh;
+		}
+
+		.hero:after {
+			background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%,rgba(0, 212, 255, 0) 75% );
+			content: "";
+			height: 90vh;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.hero-menu {
+			z-index: 2;
+			display: flex;
+			padding-top: 20px;
+		}
+		
+		.hero-menu .container {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+		}
+			
+		nav {
+			display: flex;
+		}
+
+		.menu ul {
+			display: flex;			
+			align-items: center;
+		}
+
+		.menu ul li {
+			color: white;
+			list-style: none;
+			padding: 0 20px;
+		}
+
+		.profile {
+			display: flex;
+		}
+
+		.profile img {
+			width: 50px;
+			border-radius: 100px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<header class="hero">
+			
+		<nav class="hero-menu">
+
+			<div class="container">
+				
+				<div class="logo">
+					<img src="https://aceleradev-react.netlify.com/aula-01/public/img/logo-imdb.jpg" alt="">
+				</div>
+
+				<div class="menu">
+					<ul>
+						<li>lançamentos</li>
+						<li>crítica</li>
+						<li>em cartaz</li>
+					</ul>
+				</div>
+
+				<div class="profile">
+					<div class="profile-image">
+						<img src="https://aceleradev-react.netlify.com/aula-01/public/img/walter-white.jpg" alt="">
+					</div>
+					<div class="profile-name">
+						<p>username</p>
+					</div>
+				</div>
+			
+			</div>
+
+		</nav>
+
+		<section>
+			
+
+			<h1>Mad Max: Estrada da Fúria</h1>
+
+			<span>aventura</span>
+			<span>sci-fi</span>
+			<span>terror</span>
+			
+
+			<a href="">
+				assistir filme
+			</a>
+
+			<p>nos cinemas</p>
+			<p>15 de Outubro de 2015 (Brasil)</p>
+
+		</section>
+
+	</header>
+	
+</body>
+</html>
