@@ -3,85 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>IMDB clone - Codenation - Desafio 01</title>
-
-
-
-	<style>
-	
-		* {
-			box-sizing: border-box;
-		}		
-		
-		body {
-			background-color: #ccc;
-			font-family: verdana;
-		}
-
-		.container {
-			margin: 0 auto;
-			position: relative;
-			max-width: 100%;
-			width: 960px;
-		}
-
-		.hero {
-			background-image: url(https://aceleradev-react.netlify.com/aula-01/public/img/capa-madmax2.jpg);
-			background-size: cover;
-			width: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
-			height: 90vh;
-		}
-
-		.hero:after {
-			background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%,rgba(0, 212, 255, 0) 75% );
-			content: "";
-			height: 90vh;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-
-		.hero-menu {
-			z-index: 2;
-			display: flex;
-			padding-top: 20px;
-		}
-		
-		.hero-menu .container {
-			align-items: center;
-			display: flex;
-			justify-content: space-between;
-		}
-			
-		nav {
-			display: flex;
-		}
-
-		.menu ul {
-			display: flex;			
-			align-items: center;
-		}
-
-		.menu ul li {
-			color: white;
-			list-style: none;
-			padding: 0 20px;
-		}
-
-		.profile {
-			display: flex;
-		}
-
-		.profile img {
-			width: 50px;
-			border-radius: 100px;
-		}
-
-	</style>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -109,7 +32,7 @@
 						<img src="https://aceleradev-react.netlify.com/aula-01/public/img/walter-white.jpg" alt="">
 					</div>
 					<div class="profile-name">
-						<p>username</p>
+						<p>Walter White</p>
 					</div>
 				</div>
 			
@@ -117,26 +40,62 @@
 
 		</nav>
 
-		<section>
+		<div class="container text-white hero-content">			
+
+			<h2 class="hero-content-title">Mad Max: Estrada da Fúria</h2>
 			
-
-			<h1>Mad Max: Estrada da Fúria</h1>
-
-			<span>aventura</span>
-			<span>sci-fi</span>
-			<span>terror</span>
+			<p class="hero-genero">
+				<span class="hero-genero-item">aventura</span>
+				<span class="hero-genero-item">sci-fi</span>
+				<span class="hero-genero-item">terror</span>
+			</p>
 			
+			<a href="" class="hero-button">assistir filme <i class="fa fa-play-circle-o"></i></a>
+			
+			<div class="hero-informacoes">
+				<p>Nos Cinemas</p>
+				<p>15 de Outubro de 2015 (Brasil)</p>
+			</div>
 
-			<a href="">
-				assistir filme
-			</a>
-
-			<p>nos cinemas</p>
-			<p>15 de Outubro de 2015 (Brasil)</p>
-
-		</section>
+		</div>
 
 	</header>
+
+	<section class="container">
+
+		<div class="categoria-menu-lista">
+			<ul>
+				<li><a href="">nos cinemas</a></li>
+				<li><a href="">em breve</a></li>
+				<li><a href="">bilheteria</a></li>
+				<li><a href="">séries</a></li>
+				<li><a href="">trailers</a></li>
+			</ul>
+		</div>
+
+	</section>
+
+	<section class="container	">
+
+		<ul class="movies">
+			<li class="movie">
+				<figure>
+					<img src="https://aceleradev-react.netlify.com/aula-01/public/img/poster-moonlight.jpg" alt="">
+					<div class="movie-poster-info">
+						<i class="fa fa-play" aria-hidden="true"></i>
+						<span>nome do filme</span>
+					</div>
+				</figure>
+				<div class="movie-info">
+					<span>titulo</span>
+					<span>categoria</span>
+					<i class="fa fa-heart"></i>
+					<span>7.0</span>
+				</div>
+			</li>
+		</ul>
+
+	</section>
 	
 </body>
 </html>
