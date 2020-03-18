@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-}		
+}
 
 body {
     background-color: #fff;
@@ -33,9 +33,9 @@ body {
     height: 90vh;
     flex-direction: column;
     justify-content: space-between;
-    
+
     &:after {
-        background: linear-gradient( 0deg, rgba(0, 0, 0, 0.6) 0%,rgba(0, 212, 255, 0) 75% );
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75%);
         content: "";
         height: 90vh;
         left: 0;
@@ -51,21 +51,22 @@ body {
         color: #fff;
         font-weight: bold;
         font-size: 0.8em;
-    
+
         .menu {
             ul {
-                display: flex;			
-                align-items: center;           
-                li {                
+                display: flex;
+                align-items: center;
+
+                li {
                     text-transform: uppercase;
                     color: white;
                     list-style: none;
                     padding: 0 20px;
                 }
             }
-            
+
         }
-    
+
         .container {
             align-items: center;
             display: flex;
@@ -78,17 +79,17 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-    
+
         .profile-image {
             margin-right: 15px;
         }
-    
+
         img {
             width: 50px;
             border-radius: 100px;
         }
     }
-    
+
     .hero-content {
 
         a {
@@ -104,9 +105,9 @@ body {
             margin: 0;
             text-transform: uppercase;
         }
-        
+
         .hero-genero {
-            
+
             margin-bottom: 30px;
 
             .hero-genero-item {
@@ -117,7 +118,7 @@ body {
                 font-size: 13px;
             }
         }
-        
+
 
         .hero-button {
             display: inline-block;
@@ -127,9 +128,11 @@ body {
             text-decoration: none;
             background-color: #e4bb23;
             border-radius: 40px;
+
             &:hover {
                 background-color: #bc9a1d;
             }
+
             i {
                 position: relative;
                 font-size: 20px;
@@ -143,23 +146,26 @@ body {
 
             p {
                 font-size: 0.9em;
+
                 &:first-of-type {
                     margin-top: 30px;
                     margin-bottom: 20px;
                 }
+
                 &:last-of-type {
                     color: #bc9a1d;
                 }
             }
         }
     }
-    
+
 }
 
 .categoria-menu-lista {
     margin: 30px 0 20px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     font-weight: bold;
+
     // &:hover {
     //     border-bottom: 2px solid #e4bb23;
     // }
@@ -169,13 +175,16 @@ body {
         text-transform: uppercase;
         font-size: 0.8em;
         margin-bottom: 25px;
+
         li {
             list-style: none;
+
             a {
                 text-decoration: none;
                 margin: 0 20px;
-                color: #e4bb23;   
+                color: #e4bb23;
                 padding: 25px 0;
+
                 &:hover {
                     box-shadow: inset 0 -1px 0 #e4bb23;
                 }
@@ -189,6 +198,8 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
 
     .movie {
 
@@ -233,6 +244,11 @@ body {
             width: 100%;
             z-index: 1;
 
+            &:hover {
+                opacity: 1;
+                visibility: visible;
+            }
+
             span {
                 color: #e4bb23;
                 font-size: 1.2em;
@@ -245,32 +261,40 @@ body {
                 font-size: 5em;
                 transition: all 0.2s ease-in-out;
             }
+
         }
 
-        .movie-poster-info:hover {
-            opacity: 1;
-            visibility: visible;
-        }
+
 
         .movie-info {
             padding: 10px;
             width: 100%;
 
-            .movie-titulo, .movie-categoria {
-                display: block;
-            }
-
-            .movie-titulo {
-                font-size: 1.3em;
-                font-weight: bold;
-                margin: 0;
-                text-transform: uppercase;
-            }
             .movie-categoria {
+                display: block;
+                text-decoration: none;
+                color: #e4bb23;
+                padding-top: 5px;
+                padding-bottom: 10px;
+                font-size: 0.8em;
+                transition: 0.3s;
+
                 &:hover {
                     text-decoration: underline;
                 }
             }
+
+            .movie-titulo {
+                font-size: 0.9em;
+                font-weight: bold;
+                margin: 0;
+                text-transform: uppercase;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
             .movie-nota {
                 margin: 0;
                 align-items: center;
@@ -278,6 +302,16 @@ body {
                 font-size: 1.2em;
                 font-weight: bold;
                 justify-content: space-between;
+
+                i {
+                    color: #ccc;
+                    cursor: pointer;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: #e74c3c;
+                    }
+                }
             }
         }
 
@@ -285,5 +319,53 @@ body {
     }
 }
 
+.rodape {
+    background-color: #efefef;
+    color: #bababa;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 
+    .rodape-lista {
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    .rodape-lista-item {
+        margin: 0 20px;
+    }
+
+    .rodape-lista-item:last-child {
+        margin-right: 0;
+    }
+
+    .rodape-lista-item a {
+        font-size: 1.5em;
+        color: #bababa;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .icone-twitter a:hover {
+        color: #55acee;
+    }
+
+    .icone-facebook a:hover {
+        color: #3b5998;
+    }
+
+    .icone-instagram a:hover {
+        color: #e95950;
+    }
+
+
+
+}
